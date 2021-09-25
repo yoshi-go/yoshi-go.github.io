@@ -1,11 +1,8 @@
 ---
-title: "Create Github Pages"
+title: "Github Pages & Hugoで無料爆速ブログ開設"
 date: 2021-09-25T20:26:49+07:00
 draft: false
 ---
-
-# Github Pages & Hugoで無料爆速ブログ開設
-
 ## Repository作成
 
 "{GithubアカウントID}.github.io"という名前でレポジトリを作成してClone。
