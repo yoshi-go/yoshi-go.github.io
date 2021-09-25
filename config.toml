@@ -1,0 +1,4 @@
+baseURL = 'http://example.org/'
+languageCode = 'ja-jp'
+title = "Yoshi's Blog"
+theme = "ananke"

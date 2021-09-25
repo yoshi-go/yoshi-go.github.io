@@ -1,1 +1,1 @@
-# yoshi-go.github.io
+# yoshi-blog
