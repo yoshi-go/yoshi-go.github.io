@@ -2,3 +2,53 @@ baseURL = 'https://yoshi-go.github.io/'
 languageCode = 'ja-jp'
 title = "Yoshi's Blog"
 theme = "m10c"
+paginate = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+[params]
+  author = "Yoshihiro Ishizaka / 石坂 佳大"
+  description = "ホーチミン市在住。"
+  avatar = "images/Fv-gmpoW_400x400.jpeg"
+  menu_item_separator = "|"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/yoshi-go"
+  [[params.social]]
+    icon = "facebook"
+    name = "Facebook"
+    url = "https://www.facebook.com/yoshihiro.ishizaka.37"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/zack_hcmc"
+  [[params.social]]
+    icon = "linkedin"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/yoshihiro-ishizaka-b8502014b/"
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = 'keywords'
+    weight = 100
+  [[related.indices]]
+    name = 'date'
+    weight = 10
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"

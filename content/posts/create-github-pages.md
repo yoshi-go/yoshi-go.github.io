@@ -2,6 +2,7 @@
 title: "Github Pages & Hugoで無料爆速ブログ開設"
 date: 2021-09-25T20:26:49+07:00
 draft: false
+tags: [技術]
 ---
 ## Repository作成
 
