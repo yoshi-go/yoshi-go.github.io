@@ -1,4 +1,4 @@
 baseURL = 'http://yoshi-go.github.io/'
 languageCode = 'ja-jp'
 title = "Yoshi's Blog"
-theme = "ananke"
+theme = "m10c"
