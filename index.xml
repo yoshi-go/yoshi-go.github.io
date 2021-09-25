@@ -3,9 +3,10 @@ IDに大文字が入っているとURLにも大文字が入って面倒なので
 無料で利用したい場合はRepositoryを公開する設定で。
 Hugo 導入 公式のQuick Startガイドの通りに進める。 https://gohugo.io/getting-started/quick-start/
 hugo new site quickstart で作成したディレクトリの中身を全て、Repository作成でCloneしたフォルダへ移す。
-途中の手順で生成した.mdファイルに記事内容をマークダウン形式で書く。 基本的なマークダウン記法のルールはこちらのチュートリアルを参照。 https://www.markdowntutorial.com/jp/lesson/3/
+途中の手順で生成した.mdファイルに記事内容をマークダウン形式で書く。
 draft: true となっている部分を false に変えると記事が公開される。
 --- title: &amp;quot;記事投稿テスト&amp;quot; date: 2021-09-25T19:12:55+07:00 draft: false --- ## 大見出し - titleがH1タグ要素になるのでH2タグから使う ### 小見出し この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。 設定の languageCode は&amp;quot;ja-jp&amp;quot;に変更。
+テーマは公式ドキュメントの手順で使用されているanankeではなくm10cを使用。
 自動デプロイ準備 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 &amp;ldquo;.github/workflows/gh-pages.yml&amp;quot;というファイルを作成し、 上記のページに記載されているGithub Actionsのコードをコピペ
 name: github pages on: push: branches: - main # Set a branch to deploy pull_request: jobs: deploy: runs-on: ubuntu-20.04 steps: - uses: actions/checkout@v2 with: submodules: true # Fetch Hugo themes (true OR recursive) fetch-depth: 0 # Fetch all history for .</description></item><item><title>記事投稿テスト</title><link>https://yoshi-go.github.io/posts/my-first-post/</link><pubDate>Sat, 25 Sep 2021 19:12:55 +0700</pubDate><guid>https://yoshi-go.github.io/posts/my-first-post/</guid><description>大見出し - titleがH1タグ要素になるのでH2タグから使う 小見出し この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</description></item></channel></rss>
