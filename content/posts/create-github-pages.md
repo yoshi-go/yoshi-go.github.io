@@ -19,8 +19,6 @@ https://gohugo.io/getting-started/quick-start/
 ```hugo new site quickstart``` で作成したディレクトリの中身を全て、Repository作成でCloneしたフォルダへ移す。
 
 途中の手順で生成した.mdファイルに記事内容をマークダウン形式で書く。
-基本的なマークダウン記法のルールはこちらのチュートリアルを参照。
-https://www.markdowntutorial.com/jp/lesson/3/
 
 draft: true となっている部分を false に変えると記事が公開される。
 
@@ -39,6 +37,8 @@ draft: false
 ```
 
 設定の languageCode は"ja-jp"に変更。
+
+テーマは公式ドキュメントの手順で使用されているanankeではなくm10cを使用。
 
 ## 自動デプロイ準備
 
