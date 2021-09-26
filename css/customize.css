@@ -55,8 +55,24 @@ blockquote cite a {
     word-break: break-all;
 }
 
+.main-wrap {
+    justify-content: center;
+}
+
 .app-container {
     padding: 1.5rem !important;
+    max-width: 45rem;
+    margin: auto;
+}
+
+@media (min-width: 940px) {
+    .main-wrap {
+        margin-left: 22rem;
+    }
+    .app-container {
+        max-width: 45rem;
+        margin: 0;
+    }
 }
 
 .related-post{
