@@ -1,6 +1,6 @@
 baseURL = 'https://yoshi-go.github.io/'
 languageCode = 'ja-jp'
-title = "Yoshi's Blog"
+title = "Yoshi's Tech Blog"
 theme = "m10c"
 paginate = 10
 
