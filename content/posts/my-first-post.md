@@ -1,7 +1,7 @@
 ---
 title: "記事投稿テスト"
 date: 2021-09-25T19:12:55+07:00
-draft: true
+draft: false
 tags: [読書]
 ---
 

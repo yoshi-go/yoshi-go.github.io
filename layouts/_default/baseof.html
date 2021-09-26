@@ -43,27 +43,42 @@
       {{- end }}
       <p class="copy-right">©︎ 2021 Yoshihiro Ishizaka</p>
     </header>
-    <main class="app-container">
-      {{ block "main" . }}
-        {{ .Content }}
-      {{ end }}
-    </main>
-    {{ $related := .Site.RegularPages.Related . | first 5 }}
-    {{ with $related }}
-    <div class="app-container related-post">
-      <hr>
-      <h3>関連記事</h3>
-      <ul class="related-post">
-        {{ range . }}
-        <li>
-          <span>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
-            <span class="related-post-date">{{.Date | time.Format ":date_medium"}}</span>
-          <span>
-        </li>
+    <div class="main-wrap">
+      <main class="app-container">
+        {{ block "main" . }}
+          {{ .Content }}
         {{ end }}
-      </ul>
-    </div>
+      </main>
+      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ with $related }}
+      <div class="app-container related-post">
+        <hr>
+        <h3>関連記事</h3>
+        <ul class="posts-list related-post">
+          {{ range . }}
+          <li class="posts-list-item">
+            <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+            <span class="posts-list-item-description">
+              {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+              {{ .PublishDate.Format "Jan 2, 2006" }}
+              -
+              {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+              {{ .ReadingTime }} min read
+            </span>
+            {{- with .Params.tags }}
+            <div>
+              {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
+              {{- range . -}}
+                {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+                  <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+                {{- end }}
+              {{- end }}
+            </div>
+            {{- end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
     {{ end }}
   </body>
 </html>
