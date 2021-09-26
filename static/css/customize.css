@@ -1,3 +1,48 @@
+:root {
+    --darkest-color: #242930;
+    --dark-color: #353b43;
+    --light-color: #C4CFD4;
+    --lightest-color: #ffffff;
+    --primary-color: #57cc8a;
+}
+
 pre {
     background-color: #242930;
+}
+
+code {
+    background-color: #242930;
+}
+
+blockquote {
+    position: relative;
+    padding: 30px 15px 8px 15px;
+    box-sizing: border-box;
+    font-style: italic;
+    background: var(--darkest-color);
+    color: var(--light-color);
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+}
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    content: "“";
+    font-family: sans-serif;
+    color: var(--dark-color);
+    font-size: 90px;
+    line-height: 1;
+}
+blockquote p {
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: var(--light-color);
+    font-size: 0.9em;
 }

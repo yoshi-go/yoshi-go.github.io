@@ -24,8 +24,8 @@ paginate = 10
     weight = 2
 
 [params]
-  author = "Yoshihiro Ishizaka / 石坂 佳大"
-  description = "ホーチミン市在住。"
+  author = "石坂 佳大"
+  description = "石坂 佳大のブログ。ベトナムのホーチミン市在住のエンジニアが技術記事、学習した事、書評、その他雑記を書いています。"
   avatar = "images/Fv-gmpoW_400x400.jpeg"
   menu_item_separator = "|"
   [[params.social]]
@@ -58,4 +58,8 @@ paginate = 10
 
 [taxonomies]
    tag = "tags"
-   category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
