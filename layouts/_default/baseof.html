@@ -41,11 +41,29 @@
         {{ end }}
       </div>
       {{- end }}
+      <p class="copy-right">©︎ 2021 Yoshihiro Ishizaka</p>
     </header>
     <main class="app-container">
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
     </main>
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ with $related }}
+    <div class="app-container related-post">
+      <hr>
+      <h3>関連記事</h3>
+      <ul class="related-post">
+        {{ range . }}
+        <li>
+          <span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+            <span class="related-post-date">{{.Date | time.Format ":date_medium"}}</span>
+          <span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
   </body>
 </html>

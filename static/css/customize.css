@@ -1,6 +1,7 @@
 :root {
     --darkest-color: #242930;
     --dark-color: #353b43;
+    --little-dark-color: #7D9AA1;
     --light-color: #C4CFD4;
     --lightest-color: #ffffff;
     --primary-color: #57cc8a;
@@ -12,6 +13,10 @@ pre {
 
 code {
     background-color: #242930;
+}
+
+hr {
+    border-color: var(--little-dark-color);
 }
 
 blockquote {
@@ -52,4 +57,22 @@ blockquote cite a {
 
 .app-container {
     padding: 1.5rem !important;
+}
+
+.related-post{
+    text-align: right;
+    list-style: none;
+}
+
+.related-post li {
+    padding-top: 0.5rem;
+    line-height: 1.2rem;
+}
+
+.related-post-date{
+    font-size: 0.7rem;
+}
+
+.copy-right {
+    color: var(--little-dark-color)
 }
