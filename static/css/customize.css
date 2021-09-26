@@ -46,3 +46,10 @@ blockquote cite {
     color: var(--light-color);
     font-size: 0.9em;
 }
+blockquote cite a {
+    word-break: break-all;
+}
+
+.app-container {
+    padding: 1.5rem !important;
+}
