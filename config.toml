@@ -39,7 +39,7 @@ paginate = 10
   [[params.social]]
     icon = "twitter"
     name = "Twitter"
-    url = "https://twitter.com/zack_hcmc"
+    url = "https://twitter.com/yoshi_go_hcmc"
   [[params.social]]
     icon = "linkedin"
     name = "Linkedin"
